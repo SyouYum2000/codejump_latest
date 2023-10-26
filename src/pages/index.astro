@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="codejump_1-2">
+	<main class="md:px-16">
+		<section class="bg-cyan-50 flex justify-center mt-10">
+			<img 
+			 src="public/images/PhotoMenu/photobook.jpeg" 
+			 alt="トップ"
+			 class="max-w-full flex px-5 pb-12"
+			 >
+		</section>
+		<section class="mt-10 px-10">
+			<h3>Favorite Games</h3>
+			<ul class="flex flex-col gap-3 mt-5">
+				<!-- なるべくliタグのクラスが長くならないようにする -->
+				<li>1.ペルソナシリーズ</li>
+				<li>2.ドラゴンクエストシリーズ</li>
+				<li>3.ファイナルファンタジーシリーズ</li>
+				<li>4.龍が如くシリーズ</li>
+				<li>5.バイオハザードシリーズ</li>
+			</ul>
+		</section>
+		<section class="mt-10 px-10">
+			<h3>DETAIL</h3>
+			<img 
+			 src="public/images/PhotoMenu/detail.jpg" 
+			 alt="写真"
+			 class="mt-5"
+			 >
+		</section>
+		<section class="mt-10 px-10">
+            <h3 class="underline underline-offset-8">タイトルタイトルタイトル</h3>
+			<dl class="mt-5">
+				<dt>著者</dt>
+				<dd>タイトルタイトルタイトル</dd>
+				<dt>出版社</dt>
+				<dd>タイトルタイトルタイトル</dd>
+				<dt>発行年</dt>
+				<dd>タイトルタイトルタイトル</dd>
+			</dl>
+			<a href="" class="underline mt-10">オンラインストアで見る</a>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		width: 100%;
+	}
+</style>
