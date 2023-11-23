@@ -1,19 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="codejump_1-2">
 	<main class="md:px-16">
-		<section class="bg-cyan-50 flex justify-center mt-10">
-			<img 
-			 src="public/images/PhotoMenu/photobook.jpeg" 
-			 alt="トップ"
-			 class="max-w-full flex px-5 pb-12"
-			 >
+		<section class="bg-cyan-50 flex flex-col gap-4 justify-center mt-10">
+			<h1 class="px-10">PHOTO BOOK</h1>
+			<img
+				src="public/images/PhotoMenu/photobook.jpeg"
+				alt="トップ"
+				class="max-w-full flex px-10 pb-12"
+			/>
 		</section>
-		<section class="mt-10 px-10">
-			<h3>Favorite Games</h3>
-			<ul class="flex flex-col gap-3 mt-5">
+		<section class="mt-10 px-10 md:px-28">
+			<h3 class="px-4">Favorite Games</h3>
+			<ul class="flex flex-col gap-3 px-4 mt-5">
 				<!-- なるべくliタグのクラスが長くならないようにする -->
 				<li>1.ペルソナシリーズ</li>
 				<li>2.ドラゴンクエストシリーズ</li>
@@ -22,25 +23,32 @@ import Layout from '../layouts/Layout.astro';
 				<li>5.バイオハザードシリーズ</li>
 			</ul>
 		</section>
-		<section class="mt-10 px-10">
-			<h3>DETAIL</h3>
-			<img 
-			 src="public/images/PhotoMenu/detail.jpg" 
-			 alt="写真"
-			 class="mt-5"
-			 >
+		<section class="mt-10 px-10 md:px-28 py-5 bg-cyan-50">
+			<h3 class="px-4">DETAIL</h3>
+			<div class="flex sm:flex-col gap-5 mt-5">
+				<img
+					src="public/images/PhotoMenu/detail.jpg"
+					alt="写真"
+					class="px-4 md:w-1/2 md:h-1/2 flex-1"
+				/>
+				<div class="flex flex-col gap-3 px-4 flex-1">
+					<h3 class="underline underline-offset-8">
+						タイトルタイトルタイトル
+					</h3>
+					<dl class="">
+						<dt>著者</dt>
+						<dd>タイトルタイトルタイトル</dd>
+						<dt>出版社</dt>
+						<dd>タイトルタイトルタイトル</dd>
+						<dt>発行年</dt>
+						<dd>タイトルタイトルタイトル</dd>
+					</dl>
+					<a href="" class="underline">オンラインストアで見る</a>
+				</div>
+			</div>
 		</section>
-		<section class="mt-10 px-10">
-            <h3 class="underline underline-offset-8">タイトルタイトルタイトル</h3>
-			<dl class="mt-5">
-				<dt>著者</dt>
-				<dd>タイトルタイトルタイトル</dd>
-				<dt>出版社</dt>
-				<dd>タイトルタイトルタイトル</dd>
-				<dt>発行年</dt>
-				<dd>タイトルタイトルタイトル</dd>
-			</dl>
-			<a href="" class="underline mt-10">オンラインストアで見る</a>
+		<section class="mt-10 px-10 md:px-28 bg-cyan-50">
+			<p class="px-4">&copy; 2020 PHOTO BOOK</p>
 		</section>
 	</main>
 </Layout>
